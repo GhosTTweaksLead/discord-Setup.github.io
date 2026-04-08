@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volkenstein Discord Setups | Level Up Your Community</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5865F2; /* Discord Blue */
+            --dark: #0f1011;
+            --card-bg: #1e1f22;
+            --text: #ffffff;
+            --accent: #00d4ff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: rgba(0,0,0,0.8);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+        
+        .login-btn {
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .login-btn:hover { background: var(--primary); }
+
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJpbmZqZzR4eXJpbmZqZzR4eXJpbmZqZzR4eXJpbmZqZzR4eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKSjPqcKUIwUuVG/giphy.gif');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; color: #ccc; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 50px 20px; }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-10px); border-color: var(--primary); }
+        .card h3 { font-size: 1.8rem; margin-bottom: 15px; }
+        .price { font-size: 2.5rem; font-weight: bold; color: var(--accent); margin-bottom: 20px; }
+        .price span { font-size: 1rem; color: #aaa; }
+
+        ul { list-style: none; padding: 0; margin-bottom: 30px; text-align: left; }
+        ul li { margin-bottom: 10px; }
+        ul li i { color: var(--primary); margin-right: 10px; }
+
+        .instruction-box {
+            display: none; /* Versteckt bis nach dem Kauf/Login */
+            background: #2e7d32;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        footer { text-align: center; padding: 50px; background: #050505; }
+        .email-link { color: var(--accent); text-decoration: none; }
+    </style>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAei110vCvf8UqOYOlfLR6_PJyxfaUwtsTzB6eMoEZ-fDtQ9hQUhfx_YBnimfTu_LGfGAuD4GERbuNZR8&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">VOLKENSTEIN SETUPS</div>
+        <button class="login-btn" onclick="alert('Anleitung: Adde bananause23 auf Discord nach deinem Kauf!')">Login</button>
+    </nav>
+
+    <header>
+        <h1>Discord Server Perfection</h1>
+        <p>Ich baue deinen Server. Du baust deine Community.</p>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center;">Wähle dein Level</h2>
+        
+        <div class="services">
+            <div class="card">
+                <h3>Basic Setup</h3>
+                <div class="price">10€</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Grundstruktur & Kanäle</li>
+                    <li><i class="fas fa-check"></i> Rollen-Setup (Standard)</li>
+                    <li><i class="fas fa-check"></i> Basis-Berechtigungen</li>
+                </ul>
+                <div id="paypal-container-9LQA2WMKFR6U4"></div>
+            </div>
+
+            <div class="card" style="border-color: var(--primary); position: relative;">
+                <span style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">BESTSELLER</span>
+                <h3>Pro Setup</h3>
+                <div class="price">30€</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Alles aus Basic</li>
+                    <li><i class="fas fa-check"></i> Professionelles Design (Emojis)</li>
+                    <li><i class="fas fa-check"></i> Auto-Moderation & Ticket-System</li>
+                    <li><i class="fas fa-check"></i> Willkommens-Bot mit Grafik</li>
+                </ul>
+                <div id="paypal-container-KUCNDEVDVEBYS"></div>
+            </div>
+
+            <div class="card">
+                <h3>Premium Support</h3>
+                <div class="price">25€ <span>/ Monat</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Lifetime Wartung</li>
+                    <li><i class="fas fa-check"></i> Bot-Updates & Fixes</li>
+                    <li><i class="fas fa-check"></i> Exklusiver Admin-Support</li>
+                </ul>
+                <div id="paypal-container-QSUSLHVTR93MS"></div>
+            </div>
+        </div>
+
+        <div id="after-purchase" style="margin-top: 50px; text-align: center; border: 2px dashed var(--primary); padding: 30px; border-radius: 15px;">
+            <h3><i class="fab fa-discord"></i> So geht es nach dem Kauf weiter:</h3>
+            <p>1. Kopiere deinen Transaktions-Code von PayPal.</p>
+            <p>2. Adde <strong>bananause23</strong> auf Discord.</p>
+            <p>3. Schick mir eine Nachricht mit deinem Paket-Namen. Ich starte sofort!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fragen? Schreib mir: <a href="mailto:x.volkenstein@icloud.com" class="email-link">x.volkenstein@icloud.com</a></p>
+        <p>&copy; 2026 Volkenstein Digital Services</p>
+    </footer>
+
+    <script>
+        paypal.HostedButtons({ hostedButtonId: "9LQA2WMKFR6U4" }).render("#paypal-container-9LQA2WMKFR6U4");
+        paypal.HostedButtons({ hostedButtonId: "KUCNDEVDVEBYS" }).render("#paypal-container-KUCNDEVDVEBYS");
+        paypal.HostedButtons({ hostedButtonId: "QSUSLHVTR93MS" }).render("#paypal-container-QSUSLHVTR93MS");
+    </script>
+
+</body>
+</html>
