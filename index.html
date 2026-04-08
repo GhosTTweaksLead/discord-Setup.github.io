@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Discord Setups | Level Up</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5865F2; 
+            --dark: #090a0b;
+            --card-bg: #111214;
+            --text: #ffffff;
+            --accent: #00ff88; /* Neon Grün für den "Kaufen" Reiz */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: var(--text);
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: rgba(0,0,0,0.9);
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.2rem; font-weight: 800; letter-spacing: 2px; color: var(--text); }
+        .logo span { color: var(--primary); }
+        
+        .login-btn {
+            background: #222;
+            border: 1px solid #444;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .login-btn:hover { border-color: var(--primary); background: var(--primary); }
+
+        header {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(rgba(9,10,11,0.8), rgba(9,10,11,0.9)), url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJpbmZqZzR4eXJpbmZqZzR4eXJpbmZqZzR4eXJpbmZqZzR4eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKSjPqcKUIwUuVG/giphy.gif');
+            background-size: cover;
+        }
+
+        header h1 { font-size: 3rem; text-transform: uppercase; margin: 0; letter-spacing: -1px; }
+        header p { color: #888; font-size: 1.1rem; margin-top: 10px; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 40px 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #222;
+            transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover { border-color: var(--primary); transform: scale(1.02); }
+        
+        .price { font-size: 3rem; font-weight: 900; margin: 20px 0; color: var(--text); }
+        .price span { font-size: 1rem; color: #555; }
+
+        ul { list-style: none; padding: 0; margin: 20px 0 40px 0; text-align: left; flex-grow: 1; }
+        ul li { margin-bottom: 12px; font-size: 0.95rem; color: #bbb; }
+        ul li i { color: var(--accent); margin-right: 10px; }
+
+        .info-section {
+            background: #111;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 60px;
+            text-align: center;
+            border-left: 4px solid var(--primary);
+        }
+
+        footer { text-align: center; padding: 40px; border-top: 1px solid #222; margin-top: 60px; }
+        .email { color: var(--primary); text-decoration: none; font-weight: bold; }
+    </style>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAei110vCvf8UqOYOlfLR6_PJyxfaUwtsTzB6eMoEZ-fDtQ9hQUhfx_YBnimfTu_LGfGAuD4GERbuNZR8&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PRO<span>DISCORD</span></div>
+        <button class="login-btn" onclick="alert('Nach dem Kauf: Adde bananause23 auf Discord für deinen Setup-Slot!')">LOGIN</button>
+    </nav>
+
+    <header>
+        <h1>High-End Server Setups</h1>
+        <p>Professionelle Strukturen für Streamer, Clans & Unternehmen.</p>
+    </header>
+
+    <div class="container">
+        <div class="services">
+            <div class="card">
+                <h3>BASIC</h3>
+                <div class="price">10€</div>
+                <ul>
+                    <li><i class="fas fa-bolt"></i> Clean Kanal-Struktur</li>
+                    <li><i class="fas fa-bolt"></i> Rollen & Permissions</li>
+                    <li><i class="fas fa-bolt"></i> Voice & Text Hubs</li>
+                </ul>
+                <div id="paypal-container-9LQA2WMKFR6U4"></div>
+            </div>
+
+            <div class="card" style="border-color: var(--primary);">
+                <h3>PRO SETUP</h3>
+                <div class="price">30€</div>
+                <ul>
+                    <li><i class="fas fa-check-double"></i> Alles aus Basic</li>
+                    <li><i class="fas fa-check-double"></i> Custom Design (Emojis/Fonts)</li>
+                    <li><i class="fas fa-check-double"></i> Ticket- & Support-System</li>
+                    <li><i class="fas fa-check-double"></i> Auto-Mod (Anti-Spam)</li>
+                </ul>
+                <div id="paypal-container-KUCNDEVDVEBYS"></div>
+            </div>
+
+            <div class="card">
+                <h3>LIFETIME</h3>
+                <div class="price">25€<span>/mtl.</span></div>
+                <ul>
+                    <li><i class="fas fa-shield-alt"></i> 24/7 Notfall-Support</li>
+                    <li><i class="fas fa-shield-alt"></i> Monatliche Bot-Updates</li>
+                    <li><i class="fas fa-shield-alt"></i> Unbegrenzte Änderungen</li>
+                </ul>
+                <div id="paypal-container-QSUSLHVTR93MS"></div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Wie es funktioniert</h2>
+            <p>Wähle dein Paket und zahle sicher via PayPal. Nach der Zahlung addest du <strong>bananause23</strong> auf Discord. Wir besprechen deine Wünsche und innerhalb von 24-48h ist dein Server ready to go.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Support & Business: <a href="mailto:x.volkenstein@icloud.com" class="email">x.volkenstein@icloud.com</a></p>
+        <p style="font-size: 0.8rem; color: #444; margin-top: 10px;">&copy; 2026 Professional Discord Services. Not affiliated with Discord Inc.</p>
+    </footer>
+
+    <script>
+        paypal.HostedButtons({ hostedButtonId: "9LQA2WMKFR6U4" }).render("#paypal-container-9LQA2WMKFR6U4");
+        paypal.HostedButtons({ hostedButtonId: "KUCNDEVDVEBYS" }).render("#paypal-container-KUCNDEVDVEBYS");
+        paypal.HostedButtons({ hostedButtonId: "QSUSLHVTR93MS" }).render("#paypal-container-QSUSLHVTR93MS");
+    </script>
+
+</body>
+</html>
